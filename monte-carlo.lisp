@@ -1,0 +1,6 @@
+(define (monte-carlo trials experiment)
+  (define (monte-carlo-iter remaining passed)
+    (cond ((= remaining 0) (/ passed trials))
+	  ((experiment) (monte-carlo-iter (-1+ remaining) (1+ passed)))
+	  (else (monte-carlo-iter (-1+ remaining) passed))))
+  (monte-carlo-iter trials 0))
