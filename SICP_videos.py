@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import re, urllib
+import urllib
 
 url_template = "http://www.archive.org/download/MIT_Structure_of_Computer_Programs_1986/lec%s%s_512kb.mp4"
 
